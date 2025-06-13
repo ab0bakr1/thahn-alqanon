@@ -1,0 +1,42 @@
+.services-item{
+    height: 80svh;
+    gap: 20px;
+}
+.services-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
+    width: 35%;
+}
+.services-title h3{
+    color: #B5816A;
+    font-size: clamp(2rem,3vw,4rem);
+    margin: 20px 0;
+}
+.services-info{
+    text-align: center;
+    align-items: center;
+    width: 65%;
+}
+.services-info h6{
+    font-size: clamp(1rem,1.3vw,2rem);
+    font-weight: bold;
+}
+@media (max-width:992px) {
+    .services-item{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .services-title img{
+        display: none;
+    }
+    .services-info{
+        text-align: right;
+        align-items: right;
+        width: 100%;
+        gap: 10px 0;
+    }
+}

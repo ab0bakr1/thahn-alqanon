@@ -1,0 +1,148 @@
+/* Header */
+header{
+    background-color: #000000b8;
+    position: fixed;
+    width: 100%;
+}
+/* Header End */
+/* Logo */
+.logo h1{
+    font-size: clamp(1.6rem,2vw,3rem);
+    font-weight: 700;
+    color: #fff;
+}
+.logo h1 span{
+    color: #B5816A;
+}
+/* Logo End */
+/* NavBar */
+.nav ul{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.nav ul a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.nav ul a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s ease-in-out;
+}
+.nav ul a:hover{
+    color: #B5816A;
+}
+.nav ul a:hover:after{
+    width: 30%;
+}
+.nav-btn{
+    display: none;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    background:none;
+    border: none;
+}
+.nav-btn span{
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    transition: ease-in-out 0.3s;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.nav-btn span:nth-child(1){
+    transform: translateY(-20px);
+}
+.nav-btn span:nth-child(3){
+    transform: translateY(20px);
+}
+@media (max-width:992px) {
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 101;
+        background-color: #3c3c3c;
+        width: 250px;
+        left: 0;
+        top: 80px;
+        height: 100%;
+        gap: 10px;
+        letter-spacing: 2px;
+        font-size: 25px;
+        text-align: center;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+    .nav ul a{
+        padding: 10px 0;
+    }
+    .nav ul a:nth-child(1){
+        padding-top: 30px;
+    }
+    .nav .nav-menu.active{
+        transform: translateX(0%) !important ;
+    }
+    .nav-btn{
+        display: block;
+        z-index: 101;
+    }
+    .nav .nav-btn.active span:nth-child(1){
+        transform: rotate(220deg);
+    }
+    .nav .nav-btn.active span:nth-child(2){
+        width: 0px;
+    }
+    .nav .nav-btn.active span:nth-child(3){
+        transform: rotate(-220deg);
+    }
+    .overlay.active{
+        display: block;
+        position:fixed;
+        z-index:100;
+        left:0;
+        top:0;
+        background:#000000b8;
+        height:100%;
+        width: 100%;
+    }
+}
+/* NavBar End */
+/* contactNow */
+.contactNow a{
+    background-color: #fff;
+    color: #B5816A;
+    padding: 2px 20px;
+    font-size: clamp(1rem,2vw,1.5rem);
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.contactNow a:hover{
+    background-color: #B5816A;
+    color: #fff;
+}
+@media (max-width:992px){
+    .contactNow{
+        display: none;
+    }
+}
+/* contactNow End */

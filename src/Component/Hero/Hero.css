@@ -1,0 +1,41 @@
+.hero{
+    height: 100svh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heroItem{
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.heroInfo{
+    text-align: right;
+}
+.heroInfo h2{
+    color: #fff;
+    font-size: clamp(2rem,2vw,3rem);
+    padding: 10px 0px;
+    font-weight: 700;
+}
+.heroInfo p{
+    color: #ffffffcd;
+    font-size: clamp(1.1rem,1.1vw,2rem);
+    font-weight: 500;
+}
+.heroInfo button{
+    background-color: #B5816A;
+    outline: none;
+    border: none;
+    font-size: clamp(1.1rem,1.2vw,2rem);
+    letter-spacing: 3px;
+    padding: 5px 30px;
+    color: #fff;
+    margin-top: 10px;
+}
+.heroInfo button:hover{
+    background-color: #7d4f3b;
+}
