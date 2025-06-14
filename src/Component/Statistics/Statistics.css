@@ -1,0 +1,34 @@
+.Statistics{
+    width: 100%;
+    height: 40svh;
+    background-image: url(https://www.strath.ac.uk/media/1newwebsite/imagesbysize/2000x600/scales_of_justice_2000x600.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    z-index: -2;
+}
+.Statistics::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.Statistics .Statistics-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40svh;
+    text-align: center;
+    font-size: clamp(1rem,3vw,3rem);
+    font-weight: bold;
+}
+.Statistics-item span{
+    color: #B5816A;
+    font-family:'Times New Roman', Times, serif;
+}
