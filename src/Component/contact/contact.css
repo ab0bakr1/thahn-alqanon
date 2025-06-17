@@ -1,0 +1,87 @@
+.contact-left {
+    background-image: url(https://videos.openai.com/vg-assets/assets%2Ftask_01jxz3t3epe4n8srsnzttq3p6k%2F1750169743_img_1.webp?st=2025-06-17T13%3A13%3A26Z&se=2025-06-23T14%3A13%3A26Z&sks=b&skt=2025-06-17T13%3A13%3A26Z&ske=2025-06-23T14%3A13%3A26Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=qTF2uKhSpKKDYrPppLqLnt9fX5mJalJ3RiU6wSQezcQ%3D&az=oaivgprodscus);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    z-index: -2;
+}
+.contact-left::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b5816ada;
+    z-index: -1;
+}
+.contact-right {
+    background-image: url(https://videos.openai.com/vg-assets/assets%2Ftask_01jxz47e9cfnkvzw0dtw15zee1%2F1750170192_img_1.webp?st=2025-06-17T13%3A13%3A38Z&se=2025-06-23T14%3A13%3A38Z&sks=b&skt=2025-06-17T13%3A13%3A38Z&ske=2025-06-23T14%3A13%3A38Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=DnUAgzuMeKQafr%2FD7nhbOZCxpIKx5RwvcaFgclhLD2U%3D&az=oaivgprodscus);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    z-index: -2;
+}
+.contact-right::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    z-index: -1;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: rgb(36, 36, 36);
+    padding:0 20%;
+}
+/* اليسار */
+.contact-info h4{
+    font-size: clamp(1rem, 1.2vw, 1.8rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.contact-info h6{
+    font-size: clamp(1rem, 1.6vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.contact-info p{
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.contact-info p svg{
+    margin-left: 20px;
+}
+/* اليمين */
+.contact-info h5{
+    font-size: clamp(.8rem, 1vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #b5816a;
+}
+.contact-info h3{
+    font-size: clamp(1.5rem, 2vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.contact-info button{
+    background-color:#b5816a;
+    color: #fff;
+    width: 40%;
+    padding: 10px 20px;
+    border: none;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-weight: 600;
+}
