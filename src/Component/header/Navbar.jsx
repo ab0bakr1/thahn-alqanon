@@ -21,9 +21,9 @@ const Navbar = () => {
             </button>
             <ul className={NavMenu}>
                 <Nav.Link as={NavLink} to="/">الرئيسية</Nav.Link>
-                <Nav.Link as={NavLink} to="/">من نحن</Nav.Link>
-                <Nav.Link as={NavLink} to="/">خدماتنا</Nav.Link>
-                <Nav.Link as={NavLink} to="/">للتواصل</Nav.Link>
+                <Nav.Link as={NavLink} to="/About">من نحن</Nav.Link>
+                <Nav.Link as={NavLink} to="/Services">خدماتنا</Nav.Link>
+                <Nav.Link as={NavLink} to="/contact">للتواصل</Nav.Link>
             </ul>
             <div className={Overlay} onClick={navBtn}></div>
         </div>
